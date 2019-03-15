@@ -23,7 +23,7 @@ export interface Stop {
   description: string;
   lat: number;
   lon: number;
-  buddy?: number;
+  buddy?: number | null;
   fields: Fields;
 }
 export interface Eta {

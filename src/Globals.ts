@@ -10,10 +10,10 @@ export default class Globals {
     this.initialize(fresh);
   }
   async initialize(fresh: boolean = false) {
-    [this.allRoutes, this.allStops] = await Promise.all([
-      Utils.getRoutes(fresh),
-      Utils.getStops(fresh)
-    ]);
+    // [this.allRoutes, this.allStops] = await Promise.all([
+    //   Utils.getRoutes(fresh),
+    //   Utils.getStops(fresh)
+    // ]);
     console.log("initialized");
     console.log("routes", this.allRoutes);
     console.log("stops", this.allStops);
