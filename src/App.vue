@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <MenuBar/>
-<div class="container">
-    <router-view v-bind:stops="wantedStops"></router-view>
+    <div class="container">
+      <router-view v-bind:stops="wantedStops"></router-view>
     </div>
   </div>
 </template>
@@ -77,12 +77,6 @@ export default class App extends Vue {
     // console.log("the parse", router);
     // return JSON.parse(router.currentRoute.params.stops);
     return JSON.parse((this as any).$route.query.stops);
-
-    // Utils.getFirstResultAndUnionPropOnObject(Utils.stopsKey,Utils.
-    // const stops = JSON.parse(router.currentRoute.params.stops);
-    // console.log("wanted busstops", stops);
-    // return <Stop[]>stops;
-    // return [];
   }
   getWantedRouteNums(): number[] {
     const routes: number[] = JSON.parse((this as any).$route.query.routes);
