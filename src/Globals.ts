@@ -1,5 +1,5 @@
 import { BusRoute, Stop, LiveBus } from "./Types";
-import Utils from "./Utils";
+import Utils from "./Utils/Utils";
 
 export default class Globals {
   allRoutes: BusRoute[] = [];
